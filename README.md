@@ -4,6 +4,8 @@ This public repository contains signed Windows x64 installers, updater artifacts
 
 No application source code is published here.
 
+Release history is maintained in the public [CHANGELOG.md](CHANGELOG.md).
+
 ## System requirements
 
 Lyra's default local transcription uses [Parakeet TDT 0.6B v3](https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3) through [NeMo-Speech.cpp](https://github.com/NVIDIA/NeMo-Speech.cpp).
