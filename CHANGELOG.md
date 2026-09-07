@@ -2,6 +2,19 @@
 
 Lyra releases are published from the private source repository to the public [Lyra-Releases](https://github.com/OrionAISystems/Lyra-Releases) repository. The private source copy is the canonical release history; tagged builds mirror it publicly and use the current version section as their release notes.
 
+## [0.3.2] - 2026-09-07
+
+### Fixed
+
+- Kept local transcription recoverable when the active native recognizer reports a recognition failure by retrying verified Vulkan and CPU fallbacks.
+- Added captured-audio validation and actionable native status details for unsupported sample rates, invalid samples, and recognizer failures.
+- Exposed runtime paths, model paths, and recognizer diagnostics in the Settings Diagnostics section.
+
+### Release
+
+- Prepared the Windows x64 NSIS and updater-signed release path for the local recognition reliability fix.
+- Kept runtime and Parakeet model artifacts managed outside the application bundle.
+
 ## [0.3.1] - 2026-09-02
 
 ### Fixed
@@ -53,5 +66,6 @@ Lyra releases are published from the private source repository to the public [Ly
 - Published the initial public Windows x64 installer and updater baseline.
 
 [0.3.1]: https://github.com/OrionAISystems/Lyra-Releases/releases/tag/v0.3.1
+[0.3.2]: https://github.com/OrionAISystems/Lyra-Releases/releases/tag/v0.3.2
 [0.3.0]: https://github.com/OrionAISystems/Lyra-Releases/releases/tag/v0.3.0
 [0.2.0]: https://github.com/OrionAISystems/Lyra-Releases/releases/tag/v0.2.0
