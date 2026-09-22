@@ -2,6 +2,20 @@
 
 Lyra releases are published from the private source repository to the public [Lyra-Releases](https://github.com/OrionAISystems/Lyra-Releases) repository. The private source copy is the canonical release history; tagged builds mirror it publicly and use the current version section as their release notes.
 
+## [0.4.3] - 2026-09-22
+
+### Fixed
+
+- Made the custom Windows title bar draggable and restored working minimize, maximize/restore, and close-to-tray behavior with appropriately sized controls.
+- Restored the compact legacy dictation bar and fixed its live elapsed/max-duration display for both toggle and push-to-talk sessions.
+- Improved custom dropdown keyboard, focus, hover, selected, disabled, and light-theme states so options remain readable and contained across the settings screens.
+- Replaced the diagnostics global-shortcut retry action with a stable text-only Verified state after registration succeeds.
+- Allowed benchmarking from completed or failed idle sessions while continuing to guard active capture and processing requests.
+
+### Release
+
+- Published the v0.4.3 Windows x64 release with the signed in-app updater feed and the current v0.4 daily-use fixes.
+
 ## [0.4.2] - 2026-09-22
 
 ### Fixed
@@ -115,6 +129,9 @@ Lyra releases are published from the private source repository to the public [Ly
 
 - Published the initial public Windows x64 installer and updater baseline.
 
+[0.4.3]: https://github.com/OrionAISystems/Lyra-Releases/releases/tag/v0.4.3
+[0.4.2]: https://github.com/OrionAISystems/Lyra-Releases/releases/tag/v0.4.2
+[0.4.1]: https://github.com/OrionAISystems/Lyra-Releases/releases/tag/v0.4.1
 [0.4.0]: https://github.com/OrionAISystems/Lyra-Releases/releases/tag/v0.4.0
 [0.3.1]: https://github.com/OrionAISystems/Lyra-Releases/releases/tag/v0.3.1
 [0.3.2]: https://github.com/OrionAISystems/Lyra-Releases/releases/tag/v0.3.2
