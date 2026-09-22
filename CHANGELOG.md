@@ -2,6 +2,26 @@
 
 Lyra releases are published from the private source repository to the public [Lyra-Releases](https://github.com/OrionAISystems/Lyra-Releases) repository. The private source copy is the canonical release history; tagged builds mirror it publicly and use the current version section as their release notes.
 
+## [0.4.0] - 2026-09-22
+
+### Added
+
+- Added an optional English Nemotron streaming engine with contextual Words, request-scoped partials, final-only paste, and deterministic Parakeet replay fallback.
+- Added separate local Words, Corrections, Snippets, and app-aware formatting profiles with atomic migration from the v0.3 correction list.
+- Added adaptive audio diagnostics, multiple recovery shortcuts, target-aware paste strategies, a one-recording local engine benchmark, and privacy-safe session diagnostics.
+- Added 90-day aggregate insights and the latest 200 metadata-only session records without transcript, audio, clipboard, window-title, full-path, or credential persistence.
+
+### Changed
+
+- Rebuilt Home, Dictation, Personalization, Audio & Engine, Insights, Appearance, and Diagnostics in a shared frameless desktop shell.
+- Upgraded settings to schema v3 while preserving v0.3 microphone, duration, startup, placement, corrections, and cost preferences.
+- Kept Parakeet TDT as the stable default; benchmark recommendations require an explicit user switch.
+
+### Release
+
+- Kept the signed in-app updater available in Diagnostics and the tray for installed v0.3.2 clients.
+- Kept runtime and both model artifacts independently versioned, checksum-verified, and outside the application bundle.
+
 ## [0.3.2] - 2026-09-07
 
 ### Fixed
@@ -65,6 +85,7 @@ Lyra releases are published from the private source repository to the public [Ly
 
 - Published the initial public Windows x64 installer and updater baseline.
 
+[0.4.0]: https://github.com/OrionAISystems/Lyra-Releases/releases/tag/v0.4.0
 [0.3.1]: https://github.com/OrionAISystems/Lyra-Releases/releases/tag/v0.3.1
 [0.3.2]: https://github.com/OrionAISystems/Lyra-Releases/releases/tag/v0.3.2
 [0.3.0]: https://github.com/OrionAISystems/Lyra-Releases/releases/tag/v0.3.0
