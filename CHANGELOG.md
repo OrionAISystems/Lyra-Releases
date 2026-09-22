@@ -2,6 +2,23 @@
 
 Lyra releases are published from the private source repository to the public [Lyra-Releases](https://github.com/OrionAISystems/Lyra-Releases) repository. The private source copy is the canonical release history; tagged builds mirror it publicly and use the current version section as their release notes.
 
+## [0.4.2] - 2026-09-22
+
+### Fixed
+
+- Replaced macOS-style titlebar dots with working Windows minimize, maximize, and close-to-tray controls.
+- Restored the compact v0.3 dictation bar with a small microphone pill and settings shortcut.
+- Fixed light and system themes so cards, controls, navigation, and text switch together instead of mixing dark surfaces into a light shell.
+- Improved native dropdown contrast, focus treatment, and hover styling.
+- Made benchmark and global-shortcut retry actions provide visible progress, errors, and refreshed status.
+
+### Added
+
+- Split daily Insights bars by Parakeet and Nemotron usage with a legend and accessible engine totals.
+- Added an optional Advanced Insights panel with RTF, fallback, paste, silence-only, and range totals.
+- Added configurable typing speed (default 40 WPM) for the typing-time-saved estimate.
+- Excluded silence-only/no-speech captures from the success-rate denominator.
+
 ## [0.4.1] - 2026-09-22
 
 ### Fixed
