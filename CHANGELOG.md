@@ -2,6 +2,19 @@
 
 Lyra releases are published from the private source repository to the public [Lyra-Releases](https://github.com/OrionAISystems/Lyra-Releases) repository. The private source copy is the canonical release history; tagged builds mirror it publicly and use the current version section as their release notes.
 
+## [0.4.1] - 2026-09-22
+
+### Fixed
+
+- Prevented the dictation shortcut from repeatedly launching visible `nvidia-smi` console probes when session events refresh multiple Lyra windows.
+- Kept renderer event subscriptions stable across request changes and reused the cached runtime snapshot for routine status reads.
+- Replaced truncated ISO chart labels such as `-22` with locale-aware month-and-day labels.
+- Added explicit native dropdown option colors for readable dark, light, and system-theme menus.
+
+### Release
+
+- Published a focused updater release for the v0.4.0 daily-use regressions without changing settings or personalization schemas.
+
 ## [0.4.0] - 2026-09-22
 
 ### Added
