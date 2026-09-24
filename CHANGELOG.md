@@ -2,6 +2,21 @@
 
 Lyra releases are published from the private source repository to the public [Lyra-Releases](https://github.com/OrionAISystems/Lyra-Releases) repository. The private source copy is the canonical release history; tagged builds mirror it publicly and use the current version section as their release notes.
 
+## [0.4.4] - 2026-09-24
+
+### Security
+
+- Keep Nemotron streaming sessions open while collecting partial results, then finalize once after the last audio chunk so configured local/cloud routing remains intact.
+- Bound Windows clipboard reads and make sequence-checked recovery writes atomic so malformed clipboard data cannot trigger an unbounded scan or overwrite newer clipboard contents.
+- Recheck the captured foreground window and owning process immediately before each paste injection.
+- Enforce the expected size limit on runtime and model downloads and remove oversized partial artifacts.
+- Restrict copied diagnostics and persisted fallback details to allowlisted metadata; omit local paths, endpoints, executable paths, and free-form error text.
+- Update `rustls` to 0.23.45 to address [RUSTSEC-2026-0285](https://rustsec.org/advisories/RUSTSEC-2026-0285.html).
+
+### Fixed
+
+- Keep the completed transcript available in Lyra when clipboard recovery cannot safely restore the previous clipboard contents.
+
 ## [0.4.3] - 2026-09-22
 
 ### Fixed
@@ -129,6 +144,7 @@ Lyra releases are published from the private source repository to the public [Ly
 
 - Published the initial public Windows x64 installer and updater baseline.
 
+[0.4.4]: https://github.com/OrionAISystems/Lyra-Releases/releases/tag/v0.4.4
 [0.4.3]: https://github.com/OrionAISystems/Lyra-Releases/releases/tag/v0.4.3
 [0.4.2]: https://github.com/OrionAISystems/Lyra-Releases/releases/tag/v0.4.2
 [0.4.1]: https://github.com/OrionAISystems/Lyra-Releases/releases/tag/v0.4.1
