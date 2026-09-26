@@ -2,6 +2,19 @@
 
 Lyra releases are published from the private source repository to the public [Lyra-Releases](https://github.com/OrionAISystems/Lyra-Releases) repository. The private source copy is the canonical release history; tagged builds mirror it publicly and use the current version section as their release notes.
 
+## [0.5.0] - 2026-09-26
+
+### Added
+
+- Added opt-in, Windows-user-encrypted Transcript History with Off-by-default retention choices, expiry, clear, copy, paste-again, delete, and promotion to Scratchpad.
+- Added an intentional Scratchpad capture route with its own shortcut, no automatic paste or clipboard write, persistent entries, pinning, copy, paste, and delete.
+- Added paginated History and Scratchpad screens with saved-item metadata and empty states.
+
+### Changed
+
+- Kept daily aggregate Insights indefinitely and changed metadata-only session retention to a rolling one-year age policy.
+- Added settings schema v4 migration with Transcript History Off by default and preserved existing user preferences.
+
 ## [0.4.4] - 2026-09-24
 
 ### Security
