@@ -2,6 +2,13 @@
 
 Lyra releases are published from the private source repository to the public [Lyra-Releases](https://github.com/OrionAISystems/Lyra-Releases) repository. The private source copy is the canonical release history; tagged builds mirror it publicly and use the current version section as their release notes.
 
+## [0.5.3] - 2026-09-28
+
+### Fixed
+
+- Group new daily Insights totals by the computer's local calendar day, including daylight-saving changes.
+- Move retained session metadata from legacy UTC daily buckets to local dates on upgrade while preserving lifetime totals. Older aggregates without session timestamps keep their original dates.
+
 ## [0.5.2] - 2026-09-28
 
 ### Fixed
