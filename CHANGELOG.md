@@ -2,6 +2,13 @@
 
 Lyra releases are published from the private source repository to the public [Lyra-Releases](https://github.com/OrionAISystems/Lyra-Releases) repository. The private source copy is the canonical release history; tagged builds mirror it publicly and use the current version section as their release notes.
 
+## [0.5.2] - 2026-09-28
+
+### Fixed
+
+- Show the dictation bar's context menu above the bar so it remains visible and can be dismissed with Escape or a click outside the menu.
+- Paste completed push-to-talk dictation when Space is released while Ctrl and Alt are still held; another Space press can immediately start a new dictation.
+
 ## [0.5.1] - 2026-09-28
 
 ### Added
