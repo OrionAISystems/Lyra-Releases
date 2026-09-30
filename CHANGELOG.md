@@ -2,6 +2,13 @@
 
 Lyra releases are published from the private source repository to the public [Lyra-Releases](https://github.com/OrionAISystems/Lyra-Releases) repository. The private source copy is the canonical release history; tagged builds mirror it publicly and use the current version section as their release notes.
 
+## [0.5.4] - 2026-09-30
+
+### Added
+
+- Show updater download and installation progress before Lyra restarts.
+- Add progress feedback for Parakeet and Nemotron model downloads, with a dismissible dialog and a compact Settings card that keeps tracking in the background.
+
 ## [0.5.3] - 2026-09-28
 
 ### Fixed
