@@ -2,6 +2,18 @@
 
 Lyra releases are published from the private source repository to the public [Lyra-Releases](https://github.com/OrionAISystems/Lyra-Releases) repository. The private source copy is the canonical release history; tagged builds mirror it publicly and use the current version section as their release notes.
 
+## [0.5.5] - 2026-09-30
+
+### Added
+
+- Add an offline October pumpkin theme that activates from October 1 through October 31 in local time and remains available as a year-round preview.
+- Add saved seasonality and reduced-motion preferences, with artwork for dictation states and a quiet ambience layer.
+- Add a Tauri-signed catalog and separate publication path for versioned seasonal PNG packs.
+
+### Changed
+
+- Advance settings to schema v5 while preserving existing user preferences.
+
 ## [0.5.4] - 2026-09-30
 
 ### Added
