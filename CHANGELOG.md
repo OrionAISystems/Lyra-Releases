@@ -2,6 +2,20 @@
 
 Lyra releases are published from the private source repository to the public [Lyra-Releases](https://github.com/OrionAISystems/Lyra-Releases) repository. The private source copy is the canonical release history; tagged builds mirror it publicly and use the current version section as their release notes.
 
+## [0.5.6] - 2026-10-04
+
+### Changed
+
+- Canonicalize English quantities while spoken formatting is enabled: multiword numbers, quantities with known units, decimals, percentages, and explicit currency amounts. Existing formatting opt-outs and personalization overrides remain in place.
+
+### Fixed
+
+- Allow cancellation during transcription and prevent canceled or replaced results from being pasted, copied, or saved after cancellation wins the result commit.
+- Stop recording promptly when the microphone stream fails instead of waiting for a later capture endpoint.
+- Preserve settings in memory and on disk when saving fails, and avoid shortcut-registration rollback deadlocks.
+- Avoid doubled punctuation when recognition adds marks to spoken comma or period commands, and restore sentence casing after spoken periods and explicit self-correction.
+- Recover signed seasonal theme caches deterministically, reduce redundant artwork refreshes, and align seasonal artwork validation limits.
+
 ## [0.5.5] - 2026-09-30
 
 ### Added
