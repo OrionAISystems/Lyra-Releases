@@ -2,6 +2,12 @@
 
 Lyra releases are published from the private source repository to the public [Lyra-Releases](https://github.com/OrionAISystems/Lyra-Releases) repository. The private source copy is the canonical release history; tagged builds mirror it publicly and use the current version section as their release notes.
 
+## [0.5.7] - 2026-10-06
+
+### Fixed
+
+- Continue dictation in lowercase when the insertion caret is within an unfinished sentence, including when the preceding text was typed manually. Unsupported editors retain their recognized casing.
+
 ## [0.5.6] - 2026-10-04
 
 ### Changed
