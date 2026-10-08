@@ -2,6 +2,12 @@
 
 Lyra releases are published from the private source repository to the public [Lyra-Releases](https://github.com/OrionAISystems/Lyra-Releases) repository. The private source copy is the canonical release history; tagged builds mirror it publicly and use the current version section as their release notes.
 
+## [0.5.9] - 2026-10-08
+
+### Fixed
+
+- Prevent a leading space and lowercase opening in empty Codex/ChatGPT composers when their accessibility provider exposes a placeholder or container-owned text range. Editors without a field-owned text range use fresh-dictation capitalization; supported editors retain sentence continuations.
+
 ## [0.5.8] - 2026-10-08
 
 ### Fixed
