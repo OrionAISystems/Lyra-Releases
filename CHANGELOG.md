@@ -2,6 +2,13 @@
 
 Lyra releases are published from the private source repository to the public [Lyra-Releases](https://github.com/OrionAISystems/Lyra-Releases) repository. The private source copy is the canonical release history; tagged builds mirror it publicly and use the current version section as their release notes.
 
+## [0.5.8] - 2026-10-08
+
+### Fixed
+
+- Capitalize the opening word of fresh dictations while preserving sentence continuations, mixed-case names, formatting opt-outs and personal corrections/snippets.
+- Strip leading and trailing whitespace and invisible boundary markers from transcripts before paste, copy or save.
+
 ## [0.5.7] - 2026-10-06
 
 ### Fixed
