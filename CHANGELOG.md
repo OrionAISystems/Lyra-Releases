@@ -2,6 +2,13 @@
 
 Lyra releases are published from the private source repository to the public [Lyra-Releases](https://github.com/OrionAISystems/Lyra-Releases) repository. The private source copy is the canonical release history; tagged builds mirror it publicly and use the current version section as their release notes.
 
+## [0.5.10] - 2026-10-10
+
+### Fixed
+
+- Restore local runtime setup in Audio & Engine with CUDA (NVIDIA), Vulkan (compatible graphics), and CPU (no GPU required) options, explicit install/use controls, download details, progress, cancellation, and errors. Previously verified runtimes can be selected again without downloading or replacing their files.
+- Center the Insights empty-state artwork and text within the chart plot and keep the plot inside its card.
+
 ## [0.5.9] - 2026-10-08
 
 ### Fixed
